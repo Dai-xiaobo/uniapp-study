@@ -1,0 +1,132 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "郸城头条",
+				"enablePullDownRefresh": true,
+				
+				"navigationBarTextStyle": "#fff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8",
+				"app-plus":{
+					"titleNView": {
+						"type": "transparent"
+					}
+						
+				}
+			}
+		},
+		
+		{
+			"path": "pages/publish/pub-select-type",
+			"style": {
+				"navigationBarTitleText": "发布动态"		,
+				"navigationBarTextStyle": "#fff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8"
+			}
+		},
+		
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarTextStyle": "#fff",
+				// "navigationBarBackgroundColor": "#ff4500",
+				"navigationBarBackgroundColor": "#0b60fa",
+				"backgroundColor": "#F8F8F8",
+				"app-plus":{
+					
+				}
+			}
+		},
+		
+		//////////个人中心
+		{
+			"path":"pages/home/home-list",
+			"style":{
+				"enablePullDownRefresh": true
+			}
+		},
+		
+		{
+			"path":"pages/login/login",
+			"style":{
+				// "navigationBarTitleText":"手机号登录"
+			}
+		},
+		{
+			"path":"pages/login/register"
+		},
+		{
+			"path":"pages/me/userinfo",
+			"style":{
+				"navigationBarTitleText":"修改资料"
+			}
+		},
+		{
+			"path":"pages/me/setter",
+			"style":{
+				"navigationBarTitleText":"设置"
+			}
+		},
+		{
+			"path":"components/webview",
+			"style":{
+				"navigationBarTitleText":""
+			}
+		},
+		{
+			"path":"pages/me/about-us",
+			"style":{
+				"navigationBarTitleText":"关于我们"
+			}
+		},
+		{
+			"path":"pages/home/detail",
+			"style":{
+				"navigationBarTitleText":"动态详情"
+			}
+		}
+		
+	],
+	
+	"tabBar":{
+		"color": "#7A7E83",
+        "selectedColor": "#444444",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+
+		"list":[
+			{
+				"pagePath":"pages/home/index",
+				"iconPath":"/static/tab/shouye@2x.png",
+				"selectedIconPath":"/static/tab/tab_icon_home_selected@2x.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/publish/pub-select-type",
+				"iconPath":"static/tab/fabu-2.png",
+				"selectedIconPath":"static/tab/tab_icon_pub_selected@2x.png",
+				"text":"发布",
+				"selectedColor":"#0b60fa"
+			},
+			{
+				"pagePath":"pages/me/me",
+				"iconPath":"static/tab/wode@2x.png",
+				"selectedIconPath":"static/tab/tab_icon_me_selected@2x.png",
+				"text":"个人中心"
+			}
+		]
+	},
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText":"",
+		"backgroundColor": "#E5E5E5"
+	}
+}
